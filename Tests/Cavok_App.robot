@@ -10,10 +10,18 @@ ${BROWSER} =  chrome
 ${URL} =  https://www.cavokapp.com/
 ${VALID_EMAIL} =  cj.sreejesh@gmail.com
 ${VALID_PASSWORD} =  testuser1
+${INVALID_EMAIL} =  wrong@email.com
+${INVALID_PASSWORD} =  randompassword
 
 *** Test Cases ***
 User should be able to login with valid credentials
     [Documentation]  This test verifies if a user can successfully login with existing account credentials.
     [Tags]  valid_login
-    MyCavokApp.Go to Langing Page
+    MyCavokApp.Go to Landing Page
     MyCavokApp.Login with valid credentials
+
+User should not be able to login with invalid credentials
+    [Documentation]  This test verifies if a user is not able to login with invalid email or password or both
+    [Tags]  invalid_login
+    MyCavokApp.Go to Landing Page
+    MyCavokApp.Login with invalid credentials
