@@ -2,20 +2,23 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-
+${email_field} =  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input
+${password_field} =  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input
+${login_button} =  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button
 
 *** Keywords ***
 Enter valid E-mail
-    wait until element is visible  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input
-    click element  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input
-    input text  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input  cj.sreejesh@gmail.com
+    scroll element into view  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/h4
+    wait until element is visible  ${email_field}
+    click element  ${email_field}
+    input text  ${email_field}  ${VALID_EMAIL}
 
 Enter valid Password
-    click element  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input
-    input password  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input  testuser1
+    click element  ${password_field}
+    input password  ${password_field}  ${VALID_PASSWORD}
 
 Submit
-    click button  xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button
+    click button  ${login_button}
 
 Verify successful login
     wait until page contains element  xpath=//*[@id="logbook-menu-tab-1"]

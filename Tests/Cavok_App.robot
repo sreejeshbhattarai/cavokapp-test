@@ -8,6 +8,8 @@ Test Teardown  End Web Test
 *** Variables ***
 ${BROWSER} =  chrome
 ${URL} =  https://www.cavokapp.com/
+${VALID_EMAIL} =  cj.sreejesh@gmail.com
+${VALID_PASSWORD} =  testuser1
 
 *** Test Cases ***
 User should be able to login with valid credentials
