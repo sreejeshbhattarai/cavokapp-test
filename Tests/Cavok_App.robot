@@ -10,8 +10,8 @@ ${BROWSER} =  chrome
 ${URL} =  https://www.cavokapp.com/
 
 *** Test Cases ***
-User should be able to login with valid credentials.
+User should be able to login with valid credentials
     [Documentation]  This test verifies if a user can successfully login with existing account credentials.
     [Tags]  valid_login
-    log  Executing valid_login test
-    sleep  5s
+    MyCavokApp.Go to Langing Page
+    MyCavokApp.Login with valid credentials
