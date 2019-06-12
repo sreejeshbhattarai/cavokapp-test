@@ -28,3 +28,15 @@ Login with invalid credentials
     Login.Enter invalid Password
     Landing.Submit
     Login.Verify unsuccessful login
+
+Go to "Flight Log" tab view
+    Logbook.Verify page loaded
+
+Invoice all flights
+    Logbook.Click "Invoice Now" button
+    Logbook.Action confirmation dialogue is shown
+    Logbook.Click "OK" button
+    Logbook.Invoicing completed confirmation is shown
+    Logbook.Click "OK" button to return to flight log
+
+Export Log

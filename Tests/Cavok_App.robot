@@ -25,3 +25,12 @@ User should not be able to login with invalid credentials
     [Tags]  invalid_login
     MyCavokApp.Go to Landing Page
     MyCavokApp.Login with invalid credentials
+
+User's workflow in "Logbook" view
+    [Documentation]  This test verifies all the features in "Logbook" view after user's successful login
+    [Tags]  logbook
+    MyCavokApp.Go to Landing Page
+    MyCavokApp.Login with valid credentials
+    MyCavokApp.Go to "Flight Log" tab view
+    MyCavokApp.Invoice all flights
+    MyCavokapp.Export Log
