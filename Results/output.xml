@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190612 05:23:57.505" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190613 10:40:25.998" rpa="false">
 <suite id="s1" name="Cavok App" source="C:\Projects\cavokapp\Web\cavokapp-test\Tests\Cavok_App.robot">
-<test id="s1-t1" name="User should be able to login with valid credentials">
+<test id="s1-t1" name="User's workflow in &quot;Logbook&quot; view">
 <kw name="Begin Web Test" library="CommonWeb" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190612 05:23:57.755" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190612 05:23:57.755" endtime="20190612 05:24:00.155"></status>
+<msg timestamp="20190613 10:40:26.288" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190613 10:40:26.288" endtime="20190613 10:40:28.964"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190612 05:24:00.155" endtime="20190612 05:24:01.321"></status>
+<status status="PASS" starttime="20190613 10:40:28.965" endtime="20190613 10:40:30.099"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:23:57.755" endtime="20190612 05:24:01.321"></status>
+<status status="PASS" starttime="20190613 10:40:26.288" endtime="20190613 10:40:30.099"></status>
 </kw>
 <kw name="Go to Landing Page" library="MyCavokApp">
 <kw name="Navigate To" library="Landing">
@@ -25,10 +25,10 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:01.331" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
-<status status="PASS" starttime="20190612 05:24:01.330" endtime="20190612 05:24:02.281"></status>
+<msg timestamp="20190613 10:40:30.101" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
+<status status="PASS" starttime="20190613 10:40:30.101" endtime="20190613 10:40:31.625"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:01.326" endtime="20190612 05:24:02.281"></status>
+<status status="PASS" starttime="20190613 10:40:30.100" endtime="20190613 10:40:31.625"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Landing">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -36,11 +36,11 @@
 <arguments>
 <arg>css=body &gt; div.pageheader &gt; div.pageheader-item.pageheader-item-logo &gt; a &gt; img</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:02.282" endtime="20190612 05:24:02.393"></status>
+<status status="PASS" starttime="20190613 10:40:31.627" endtime="20190613 10:40:31.658"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:02.282" endtime="20190612 05:24:02.393"></status>
+<status status="PASS" starttime="20190613 10:40:31.626" endtime="20190613 10:40:31.658"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:01.323" endtime="20190612 05:24:02.394"></status>
+<status status="PASS" starttime="20190613 10:40:30.100" endtime="20190613 10:40:31.658"></status>
 </kw>
 <kw name="Login with valid credentials" library="MyCavokApp">
 <kw name="Enter valid E-mail" library="Login">
@@ -49,22 +49,22 @@
 <arguments>
 <arg>${login_button}</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:02.395" endtime="20190612 05:24:02.451"></status>
+<status status="PASS" starttime="20190613 10:40:31.659" endtime="20190613 10:40:31.726"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${email_field}</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:02.451" endtime="20190612 05:24:02.491"></status>
+<status status="PASS" starttime="20190613 10:40:31.726" endtime="20190613 10:40:31.772"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${email_field}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:02.492" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:02.491" endtime="20190612 05:24:02.555"></status>
+<msg timestamp="20190613 10:40:31.773" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20190613 10:40:31.772" endtime="20190613 10:40:31.853"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -72,274 +72,10 @@
 <arg>${email_field}</arg>
 <arg>${VALID_EMAIL}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:02.556" level="INFO">Typing text 'cj.sreejesh@gmail.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:02.556" endtime="20190612 05:24:02.782"></status>
+<msg timestamp="20190613 10:40:31.854" level="INFO">Typing text 'cj.sreejesh@gmail.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20190613 10:40:31.853" endtime="20190613 10:40:32.128"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:02.395" endtime="20190612 05:24:02.783"></status>
-</kw>
-<kw name="Enter valid Password" library="Login">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${password_field}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:02.783" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:02.783" endtime="20190612 05:24:02.849"></status>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<doc>Types the given password into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${password_field}</arg>
-<arg>${VALID_PASSWORD}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:02.849" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:02.849" endtime="20190612 05:24:02.927"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:02.783" endtime="20190612 05:24:02.927"></status>
-</kw>
-<kw name="Submit" library="Landing">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${login_button}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:02.928" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
-<status status="PASS" starttime="20190612 05:24:02.928" endtime="20190612 05:24:04.446"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:02.928" endtime="20190612 05:24:04.446"></status>
-</kw>
-<kw name="Verify successful login" library="Login">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` appears on current page.</doc>
-<arguments>
-<arg>xpath=//*[@id="logbook-menu-tab-1"]</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:04.447" endtime="20190612 05:24:04.488"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:04.446" endtime="20190612 05:24:04.488"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:02.394" endtime="20190612 05:24:04.489"></status>
-</kw>
-<kw name="End Web Test" library="CommonWeb" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190612 05:24:04.490" endtime="20190612 05:24:06.769"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:04.489" endtime="20190612 05:24:06.769"></status>
-</kw>
-<doc>This test verifies if a user can successfully login with existing account credentials.</doc>
-<tags>
-<tag>valid_login</tag>
-</tags>
-<status status="PASS" starttime="20190612 05:23:57.755" endtime="20190612 05:24:06.769" critical="yes"></status>
-</test>
-<test id="s1-t2" name="User should not be able to login with invalid credentials">
-<kw name="Begin Web Test" library="CommonWeb" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:06.785" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190612 05:24:06.785" endtime="20190612 05:24:09.172"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190612 05:24:09.172" endtime="20190612 05:24:10.322"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:06.785" endtime="20190612 05:24:10.322"></status>
-</kw>
-<kw name="Go to Landing Page" library="MyCavokApp">
-<kw name="Navigate To" library="Landing">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>${URL}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:10.322" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
-<status status="PASS" starttime="20190612 05:24:10.322" endtime="20190612 05:24:11.248"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:10.322" endtime="20190612 05:24:11.248"></status>
-</kw>
-<kw name="Verify Page Loaded" library="Landing">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` appears on current page.</doc>
-<arguments>
-<arg>css=body &gt; div.pageheader &gt; div.pageheader-item.pageheader-item-logo &gt; a &gt; img</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:11.249" endtime="20190612 05:24:11.288"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:11.249" endtime="20190612 05:24:11.289"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:10.322" endtime="20190612 05:24:11.289"></status>
-</kw>
-<kw name="Login with invalid credentials" library="MyCavokApp">
-<kw name="Enter invalid E-mail" library="Login">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<doc>Scrolls an element identified by ``locator`` into view.</doc>
-<arguments>
-<arg>${login_button}</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:11.294" endtime="20190612 05:24:11.334"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${email_field}</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:11.334" endtime="20190612 05:24:11.371"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${email_field}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:11.371" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:11.371" endtime="20190612 05:24:11.459"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${email_field}</arg>
-<arg>${INVALID_EMAIL}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:11.460" level="INFO">Typing text 'wrong@email.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:11.459" endtime="20190612 05:24:11.637"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:11.293" endtime="20190612 05:24:11.637"></status>
-</kw>
-<kw name="Enter invalid Password" library="Login">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${password_field}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:11.639" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:11.638" endtime="20190612 05:24:11.702"></status>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<doc>Types the given password into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${password_field}</arg>
-<arg>${INVALID_PASSWORD}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:11.703" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:11.702" endtime="20190612 05:24:11.805"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:11.638" endtime="20190612 05:24:11.805"></status>
-</kw>
-<kw name="Submit" library="Landing">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${login_button}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:11.807" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
-<status status="PASS" starttime="20190612 05:24:11.806" endtime="20190612 05:24:12.353"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:11.806" endtime="20190612 05:24:12.355"></status>
-</kw>
-<kw name="Verify unsuccessful login" library="Login">
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>Incorrect username / password</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:12.356" endtime="20190612 05:24:12.407"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:12.356" endtime="20190612 05:24:12.408"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:11.292" endtime="20190612 05:24:12.408"></status>
-</kw>
-<kw name="End Web Test" library="CommonWeb" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190612 05:24:12.408" endtime="20190612 05:24:14.647"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:12.408" endtime="20190612 05:24:14.647"></status>
-</kw>
-<doc>This test verifies if a user is not able to login with invalid email or password or both</doc>
-<tags>
-<tag>invalid_login</tag>
-</tags>
-<status status="PASS" starttime="20190612 05:24:06.769" endtime="20190612 05:24:14.647" critical="yes"></status>
-</test>
-<test id="s1-t3" name="User's workflow in &quot;Logbook&quot; view">
-<kw name="Begin Web Test" library="CommonWeb" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:14.647" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190612 05:24:14.647" endtime="20190612 05:24:16.991"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190612 05:24:16.991" endtime="20190612 05:24:18.138"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:14.647" endtime="20190612 05:24:18.138"></status>
-</kw>
-<kw name="Go to Landing Page" library="MyCavokApp">
-<kw name="Navigate To" library="Landing">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>${URL}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:18.138" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
-<status status="PASS" starttime="20190612 05:24:18.138" endtime="20190612 05:24:18.976"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:18.138" endtime="20190612 05:24:18.976"></status>
-</kw>
-<kw name="Verify Page Loaded" library="Landing">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` appears on current page.</doc>
-<arguments>
-<arg>css=body &gt; div.pageheader &gt; div.pageheader-item.pageheader-item-logo &gt; a &gt; img</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:18.977" endtime="20190612 05:24:19.099"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:18.977" endtime="20190612 05:24:19.100"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:18.138" endtime="20190612 05:24:19.100"></status>
-</kw>
-<kw name="Login with valid credentials" library="MyCavokApp">
-<kw name="Enter valid E-mail" library="Login">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<doc>Scrolls an element identified by ``locator`` into view.</doc>
-<arguments>
-<arg>${login_button}</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:19.103" endtime="20190612 05:24:19.148"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${email_field}</arg>
-</arguments>
-<status status="PASS" starttime="20190612 05:24:19.148" endtime="20190612 05:24:19.185"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${email_field}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:19.186" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:19.186" endtime="20190612 05:24:19.265"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${email_field}</arg>
-<arg>${VALID_EMAIL}</arg>
-</arguments>
-<msg timestamp="20190612 05:24:19.266" level="INFO">Typing text 'cj.sreejesh@gmail.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:19.265" endtime="20190612 05:24:19.445"></status>
-</kw>
-<status status="PASS" starttime="20190612 05:24:19.102" endtime="20190612 05:24:19.445"></status>
+<status status="PASS" starttime="20190613 10:40:31.659" endtime="20190613 10:40:32.128"></status>
 </kw>
 <kw name="Enter valid Password" library="Login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -347,8 +83,8 @@
 <arguments>
 <arg>${password_field}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:19.446" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:19.446" endtime="20190612 05:24:19.509"></status>
+<msg timestamp="20190613 10:40:32.128" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20190613 10:40:32.128" endtime="20190613 10:40:32.226"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -356,10 +92,10 @@
 <arg>${password_field}</arg>
 <arg>${VALID_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:19.509" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190612 05:24:19.509" endtime="20190612 05:24:19.618"></status>
+<msg timestamp="20190613 10:40:32.227" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20190613 10:40:32.226" endtime="20190613 10:40:32.352"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:19.445" endtime="20190612 05:24:19.618"></status>
+<status status="PASS" starttime="20190613 10:40:32.128" endtime="20190613 10:40:32.353"></status>
 </kw>
 <kw name="Submit" library="Landing">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -367,10 +103,10 @@
 <arguments>
 <arg>${login_button}</arg>
 </arguments>
-<msg timestamp="20190612 05:24:19.619" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
-<status status="PASS" starttime="20190612 05:24:19.619" endtime="20190612 05:24:21.279"></status>
+<msg timestamp="20190613 10:40:32.354" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20190613 10:40:32.353" endtime="20190613 10:40:34.022"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:19.618" endtime="20190612 05:24:21.279"></status>
+<status status="PASS" starttime="20190613 10:40:32.353" endtime="20190613 10:40:34.022"></status>
 </kw>
 <kw name="Verify successful login" library="Login">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -378,11 +114,11 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-tab-1"]</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:21.280" endtime="20190612 05:24:21.330"></status>
+<status status="PASS" starttime="20190613 10:40:34.023" endtime="20190613 10:40:34.076"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.280" endtime="20190612 05:24:21.330"></status>
+<status status="PASS" starttime="20190613 10:40:34.022" endtime="20190613 10:40:34.076"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:19.100" endtime="20190612 05:24:21.330"></status>
+<status status="PASS" starttime="20190613 10:40:31.658" endtime="20190613 10:40:34.076"></status>
 </kw>
 <kw name="Go to &quot;Flight Log&quot; tab view" library="MyCavokApp">
 <kw name="Verify page loaded" library="Logbook">
@@ -391,11 +127,11 @@
 <arguments>
 <arg>Logbook</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:21.332" endtime="20190612 05:24:21.380"></status>
+<status status="PASS" starttime="20190613 10:40:34.078" endtime="20190613 10:40:34.103"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.332" endtime="20190612 05:24:21.380"></status>
+<status status="PASS" starttime="20190613 10:40:34.078" endtime="20190613 10:40:34.103"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.331" endtime="20190612 05:24:21.380"></status>
+<status status="PASS" starttime="20190613 10:40:34.077" endtime="20190613 10:40:34.103"></status>
 </kw>
 <kw name="Invoice all flights" library="MyCavokApp">
 <kw name="Click &quot;Invoice Now&quot; button" library="Logbook">
@@ -404,10 +140,10 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button</arg>
 </arguments>
-<msg timestamp="20190612 05:24:21.381" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button'.</msg>
-<status status="PASS" starttime="20190612 05:24:21.381" endtime="20190612 05:24:21.541"></status>
+<msg timestamp="20190613 10:40:34.105" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20190613 10:40:34.105" endtime="20190613 10:40:34.402"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.381" endtime="20190612 05:24:21.542"></status>
+<status status="PASS" starttime="20190613 10:40:34.104" endtime="20190613 10:40:34.402"></status>
 </kw>
 <kw name="Action confirmation dialogue is shown" library="Logbook">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -415,9 +151,9 @@
 <arguments>
 <arg>Invoicing</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:21.542" endtime="20190612 05:24:21.560"></status>
+<status status="PASS" starttime="20190613 10:40:34.403" endtime="20190613 10:40:34.430"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.542" endtime="20190612 05:24:21.560"></status>
+<status status="PASS" starttime="20190613 10:40:34.403" endtime="20190613 10:40:34.430"></status>
 </kw>
 <kw name="Click &quot;OK&quot; button" library="Logbook">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -425,10 +161,10 @@
 <arguments>
 <arg>xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]</arg>
 </arguments>
-<msg timestamp="20190612 05:24:21.561" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
-<status status="PASS" starttime="20190612 05:24:21.561" endtime="20190612 05:24:21.663"></status>
+<msg timestamp="20190613 10:40:34.432" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20190613 10:40:34.431" endtime="20190613 10:40:34.640"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.560" endtime="20190612 05:24:21.664"></status>
+<status status="PASS" starttime="20190613 10:40:34.430" endtime="20190613 10:40:34.641"></status>
 </kw>
 <kw name="Invoicing completed confirmation is shown" library="Logbook">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -436,63 +172,61 @@
 <arguments>
 <arg>Invoicing completed</arg>
 </arguments>
-<status status="PASS" starttime="20190612 05:24:21.665" endtime="20190612 05:24:21.687"></status>
+<status status="PASS" starttime="20190613 10:40:34.642" endtime="20190613 10:40:34.756"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:21.664" endtime="20190612 05:24:21.688"></status>
+<status status="PASS" starttime="20190613 10:40:34.641" endtime="20190613 10:40:34.757"></status>
 </kw>
 <kw name="Click &quot;OK&quot; button to return to flight log" library="Logbook">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190613 10:40:36.759" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190613 10:40:34.758" endtime="20190613 10:40:36.759"></status>
+</kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]</arg>
 </arguments>
-<msg timestamp="20190612 05:24:21.691" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190612 05:24:22.222" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190612 05:24:21.768" endtime="20190612 05:24:22.222"></status>
+<msg timestamp="20190613 10:40:36.759" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20190613 10:40:36.759" endtime="20190613 10:40:36.905"></status>
 </kw>
-<msg timestamp="20190612 05:24:22.232" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" class="btn btn-danger"&gt;...&lt;/button&gt; is not clickable at point (1028, 135). Other element would receive the click: &lt;div class="modal-footer"&gt;&lt;/div&gt;
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190612 05:24:21.690" endtime="20190612 05:24:22.232"></status>
+<status status="PASS" starttime="20190613 10:40:34.757" endtime="20190613 10:40:36.905"></status>
 </kw>
-<status status="FAIL" starttime="20190612 05:24:21.688" endtime="20190612 05:24:22.232"></status>
+<status status="PASS" starttime="20190613 10:40:34.104" endtime="20190613 10:40:36.905"></status>
 </kw>
-<status status="FAIL" starttime="20190612 05:24:21.380" endtime="20190612 05:24:22.232"></status>
+<kw name="Export Log" library="MyCavokApp">
+<msg timestamp="20190613 10:40:36.916" level="FAIL">User keyword 'Export Log' contains no keywords.</msg>
+<status status="FAIL" starttime="20190613 10:40:36.916" endtime="20190613 10:40:36.916"></status>
 </kw>
 <kw name="End Web Test" library="CommonWeb" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190612 05:24:22.232" endtime="20190612 05:24:24.481"></status>
+<status status="PASS" starttime="20190613 10:40:36.919" endtime="20190613 10:40:39.454"></status>
 </kw>
-<status status="PASS" starttime="20190612 05:24:22.232" endtime="20190612 05:24:24.481"></status>
+<status status="PASS" starttime="20190613 10:40:36.918" endtime="20190613 10:40:39.455"></status>
 </kw>
 <doc>This test verifies all the features in "Logbook" view after user's successful login</doc>
 <tags>
 <tag>logbook</tag>
 </tags>
-<status status="FAIL" starttime="20190612 05:24:14.647" endtime="20190612 05:24:24.481" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" class="btn btn-danger"&gt;...&lt;/button&gt; is not clickable at point (1028, 135). Other element would receive the click: &lt;div class="modal-footer"&gt;&lt;/div&gt;
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="FAIL" starttime="20190613 10:40:26.287" endtime="20190613 10:40:39.456" critical="yes">User keyword 'Export Log' contains no keywords.</status>
 </test>
 <doc>This test suite tests the functional features and workflow of the cavokapp web application</doc>
-<status status="FAIL" starttime="20190612 05:23:57.505" endtime="20190612 05:24:24.481"></status>
+<status status="FAIL" starttime="20190613 10:40:26.000" endtime="20190613 10:40:39.460"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1">Critical Tests</stat>
-<stat pass="2" fail="1">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">invalid_login</stat>
 <stat pass="0" fail="1">logbook</stat>
-<stat pass="1" fail="0">valid_login</stat>
 </tag>
 <suite>
-<stat pass="2" fail="1" id="s1" name="Cavok App">Cavok App</stat>
+<stat pass="0" fail="1" id="s1" name="Cavok App">Cavok App</stat>
 </suite>
 </statistics>
 <errors>

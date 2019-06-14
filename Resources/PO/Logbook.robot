@@ -21,4 +21,7 @@ Invoicing completed confirmation is shown
     wait until page contains  Invoicing completed
 
 Click "OK" button to return to flight log
+    # wait until page contains element  xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]
+
+    sleep  2s
     click button  xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]
