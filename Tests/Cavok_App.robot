@@ -33,4 +33,7 @@ User's workflow in "Logbook" view
     MyCavokApp.Login with valid credentials
     MyCavokApp.Go to "Flight Log" tab view
     MyCavokApp.Invoice all flights
-    MyCavokapp.Export Log
+    MyCavokApp.Export Log
+    MyCavokApp.Switch Logbook mode
+    MyCavokApp.Save flight log with invalid input
+    MyCavokApp.Save flight log with valid input

@@ -40,3 +40,15 @@ Invoice all flights
     Logbook.Click "OK" button to return to flight log
 
 Export Log
+    Logbook.Click "Export Log" button
+
+Switch Logbook mode
+    log  to do
+
+Save flight log with invalid input
+    Save flight log
+
+Save flight log with valid input
+    Logbook.Select desired Aircraft
+    Save flight log
+
