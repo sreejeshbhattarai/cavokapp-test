@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190624 17:35:03.950" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190705 13:33:03.833" rpa="false">
 <suite id="s1" name="Cavok App" source="C:\Projects\cavokapp\Web\cavokapp-test\tests\Cavok_App.robot">
 <test id="s1-t1" name="User's workflow in &quot;Logbook&quot; view">
 <kw name="Begin Web Test" library="CommonWeb" type="setup">
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:04.231" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190624 17:35:04.231" endtime="20190624 17:35:09.859"></status>
+<msg timestamp="20190705 13:33:04.073" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190705 13:33:04.073" endtime="20190705 13:33:09.482"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190624 17:35:09.860" endtime="20190624 17:35:14.034"></status>
+<status status="PASS" starttime="20190705 13:33:09.483" endtime="20190705 13:33:13.642"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:04.230" endtime="20190624 17:35:14.034"></status>
+<status status="PASS" starttime="20190705 13:33:04.073" endtime="20190705 13:33:13.642"></status>
 </kw>
 <kw name="Go to Landing Page" library="MyCavokApp">
 <kw name="Navigate To" library="Landing">
@@ -25,10 +25,10 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:14.038" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
-<status status="PASS" starttime="20190624 17:35:14.038" endtime="20190624 17:35:15.033"></status>
+<msg timestamp="20190705 13:33:13.647" level="INFO">Opening url 'https://www.cavokapp.com/'</msg>
+<status status="PASS" starttime="20190705 13:33:13.646" endtime="20190705 13:33:14.580"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:14.038" endtime="20190624 17:35:15.033"></status>
+<status status="PASS" starttime="20190705 13:33:13.645" endtime="20190705 13:33:14.581"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Landing">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -36,11 +36,11 @@
 <arguments>
 <arg>css=body &gt; div.pageheader &gt; div.pageheader-item.pageheader-item-logo &gt; a &gt; img</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:15.034" endtime="20190624 17:35:15.176"></status>
+<status status="PASS" starttime="20190705 13:33:14.582" endtime="20190705 13:33:14.670"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:15.033" endtime="20190624 17:35:15.177"></status>
+<status status="PASS" starttime="20190705 13:33:14.581" endtime="20190705 13:33:14.670"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:14.038" endtime="20190624 17:35:15.177"></status>
+<status status="PASS" starttime="20190705 13:33:13.644" endtime="20190705 13:33:14.671"></status>
 </kw>
 <kw name="Login with valid credentials" library="MyCavokApp">
 <kw name="Enter valid E-mail" library="Login">
@@ -49,22 +49,22 @@
 <arguments>
 <arg>${login_button}</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:15.180" endtime="20190624 17:35:15.242"></status>
+<status status="PASS" starttime="20190705 13:33:14.672" endtime="20190705 13:33:14.705"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${email_field}</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:15.242" endtime="20190624 17:35:15.281"></status>
+<status status="PASS" starttime="20190705 13:33:14.705" endtime="20190705 13:33:14.802"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${email_field}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:15.281" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190624 17:35:15.281" endtime="20190624 17:35:15.336"></status>
+<msg timestamp="20190705 13:33:14.803" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20190705 13:33:14.803" endtime="20190705 13:33:14.861"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -72,10 +72,10 @@
 <arg>${email_field}</arg>
 <arg>${VALID_EMAIL}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:15.337" level="INFO">Typing text 'cj.sreejesh@gmail.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20190624 17:35:15.337" endtime="20190624 17:35:15.532"></status>
+<msg timestamp="20190705 13:33:14.861" level="INFO">Typing text 'cj.sreejesh@gmail.com' into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20190705 13:33:14.861" endtime="20190705 13:33:15.040"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:15.179" endtime="20190624 17:35:15.532"></status>
+<status status="PASS" starttime="20190705 13:33:14.672" endtime="20190705 13:33:15.041"></status>
 </kw>
 <kw name="Enter valid Password" library="Login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -83,8 +83,8 @@
 <arguments>
 <arg>${password_field}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:15.532" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190624 17:35:15.532" endtime="20190624 17:35:15.597"></status>
+<msg timestamp="20190705 13:33:15.042" level="INFO">Clicking element 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20190705 13:33:15.041" endtime="20190705 13:33:15.118"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -92,10 +92,10 @@
 <arg>${password_field}</arg>
 <arg>${VALID_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:15.597" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20190624 17:35:15.597" endtime="20190624 17:35:15.692"></status>
+<msg timestamp="20190705 13:33:15.119" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20190705 13:33:15.118" endtime="20190705 13:33:15.212"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:15.532" endtime="20190624 17:35:15.692"></status>
+<status status="PASS" starttime="20190705 13:33:15.041" endtime="20190705 13:33:15.212"></status>
 </kw>
 <kw name="Submit" library="Landing">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -103,10 +103,10 @@
 <arguments>
 <arg>${login_button}</arg>
 </arguments>
-<msg timestamp="20190624 17:35:15.692" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
-<status status="PASS" starttime="20190624 17:35:15.692" endtime="20190624 17:35:17.426"></status>
+<msg timestamp="20190705 13:33:15.213" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[1]/div[2]/div[1]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:15.213" endtime="20190705 13:33:17.003"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:15.692" endtime="20190624 17:35:17.427"></status>
+<status status="PASS" starttime="20190705 13:33:15.212" endtime="20190705 13:33:17.004"></status>
 </kw>
 <kw name="Verify successful login" library="Login">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -114,11 +114,11 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-tab-1"]</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:17.427" endtime="20190624 17:35:17.450"></status>
+<status status="PASS" starttime="20190705 13:33:17.004" endtime="20190705 13:33:17.079"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.427" endtime="20190624 17:35:17.450"></status>
+<status status="PASS" starttime="20190705 13:33:17.004" endtime="20190705 13:33:17.079"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:15.178" endtime="20190624 17:35:17.450"></status>
+<status status="PASS" starttime="20190705 13:33:14.671" endtime="20190705 13:33:17.079"></status>
 </kw>
 <kw name="Go to &quot;Flight Log&quot; tab view" library="MyCavokApp">
 <kw name="Verify page loaded" library="Logbook">
@@ -127,11 +127,11 @@
 <arguments>
 <arg>Logbook</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:17.450" endtime="20190624 17:35:17.477"></status>
+<status status="PASS" starttime="20190705 13:33:17.081" endtime="20190705 13:33:17.106"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.450" endtime="20190624 17:35:17.477"></status>
+<status status="PASS" starttime="20190705 13:33:17.080" endtime="20190705 13:33:17.106"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.450" endtime="20190624 17:35:17.477"></status>
+<status status="PASS" starttime="20190705 13:33:17.080" endtime="20190705 13:33:17.106"></status>
 </kw>
 <kw name="Invoice all flights" library="MyCavokApp">
 <kw name="Click &quot;Invoice Now&quot; button" library="Logbook">
@@ -140,10 +140,10 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button</arg>
 </arguments>
-<msg timestamp="20190624 17:35:17.479" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button'.</msg>
-<status status="PASS" starttime="20190624 17:35:17.479" endtime="20190624 17:35:17.676"></status>
+<msg timestamp="20190705 13:33:17.107" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:17.107" endtime="20190705 13:33:17.288"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.478" endtime="20190624 17:35:17.677"></status>
+<status status="PASS" starttime="20190705 13:33:17.107" endtime="20190705 13:33:17.288"></status>
 </kw>
 <kw name="Action confirmation dialogue is shown" library="Logbook">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -151,9 +151,9 @@
 <arguments>
 <arg>Invoicing</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:17.677" endtime="20190624 17:35:17.704"></status>
+<status status="PASS" starttime="20190705 13:33:17.289" endtime="20190705 13:33:17.312"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.677" endtime="20190624 17:35:17.704"></status>
+<status status="PASS" starttime="20190705 13:33:17.289" endtime="20190705 13:33:17.312"></status>
 </kw>
 <kw name="Click &quot;OK&quot; button" library="Logbook">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -161,10 +161,10 @@
 <arguments>
 <arg>xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]</arg>
 </arguments>
-<msg timestamp="20190624 17:35:17.707" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
-<status status="PASS" starttime="20190624 17:35:17.705" endtime="20190624 17:35:17.842"></status>
+<msg timestamp="20190705 13:33:17.314" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20190705 13:33:17.313" endtime="20190705 13:33:17.497"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.705" endtime="20190624 17:35:17.843"></status>
+<status status="PASS" starttime="20190705 13:33:17.313" endtime="20190705 13:33:17.498"></status>
 </kw>
 <kw name="Invoicing completed confirmation is shown" library="Logbook">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -172,9 +172,9 @@
 <arguments>
 <arg>Invoicing completed</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:17.843" endtime="20190624 17:35:17.877"></status>
+<status status="PASS" starttime="20190705 13:33:17.499" endtime="20190705 13:33:17.526"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.843" endtime="20190624 17:35:17.877"></status>
+<status status="PASS" starttime="20190705 13:33:17.498" endtime="20190705 13:33:17.527"></status>
 </kw>
 <kw name="Click &quot;OK&quot; button to return to flight log" library="Logbook">
 <kw name="Sleep" library="BuiltIn">
@@ -182,20 +182,20 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190624 17:35:19.882" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20190624 17:35:17.878" endtime="20190624 17:35:19.882"></status>
+<msg timestamp="20190705 13:33:19.529" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190705 13:33:17.528" endtime="20190705 13:33:19.529"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]</arg>
 </arguments>
-<msg timestamp="20190624 17:35:19.882" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
-<status status="PASS" starttime="20190624 17:35:19.882" endtime="20190624 17:35:19.996"></status>
+<msg timestamp="20190705 13:33:19.529" level="INFO">Clicking button 'xpath=/html/body/div[7]/div[2]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20190705 13:33:19.529" endtime="20190705 13:33:19.636"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.878" endtime="20190624 17:35:19.996"></status>
+<status status="PASS" starttime="20190705 13:33:17.527" endtime="20190705 13:33:19.637"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:17.478" endtime="20190624 17:35:19.996"></status>
+<status status="PASS" starttime="20190705 13:33:17.107" endtime="20190705 13:33:19.637"></status>
 </kw>
 <kw name="Export Log" library="MyCavokApp">
 <kw name="Click &quot;Export Log&quot; button" library="Logbook">
@@ -204,20 +204,20 @@
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20190624 17:35:21.000" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20190624 17:35:19.999" endtime="20190624 17:35:21.000"></status>
+<msg timestamp="20190705 13:33:20.640" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20190705 13:33:19.639" endtime="20190705 13:33:20.640"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/a</arg>
 </arguments>
-<msg timestamp="20190624 17:35:21.001" level="INFO">Clicking element 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/a'.</msg>
-<status status="PASS" starttime="20190624 17:35:21.001" endtime="20190624 17:35:21.204"></status>
+<msg timestamp="20190705 13:33:20.640" level="INFO">Clicking element 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[1]/div[2]/a'.</msg>
+<status status="PASS" starttime="20190705 13:33:20.640" endtime="20190705 13:33:20.846"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:19.998" endtime="20190624 17:35:21.205"></status>
+<status status="PASS" starttime="20190705 13:33:19.638" endtime="20190705 13:33:20.846"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:19.997" endtime="20190624 17:35:21.205"></status>
+<status status="PASS" starttime="20190705 13:33:19.638" endtime="20190705 13:33:20.846"></status>
 </kw>
 <kw name="Switch Logbook mode" library="MyCavokApp">
 <kw name="Log" library="BuiltIn">
@@ -225,10 +225,10 @@
 <arguments>
 <arg>to do</arg>
 </arguments>
-<msg timestamp="20190624 17:35:21.206" level="INFO">to do</msg>
-<status status="PASS" starttime="20190624 17:35:21.206" endtime="20190624 17:35:21.206"></status>
+<msg timestamp="20190705 13:33:20.849" level="INFO">to do</msg>
+<status status="PASS" starttime="20190705 13:33:20.848" endtime="20190705 13:33:20.850"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:21.206" endtime="20190624 17:35:21.207"></status>
+<status status="PASS" starttime="20190705 13:33:20.847" endtime="20190705 13:33:20.850"></status>
 </kw>
 <kw name="Save flight log with invalid input" library="MyCavokApp">
 <kw name="Save flight log" library="Logbook">
@@ -237,19 +237,19 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:21.208" endtime="20190624 17:35:21.250"></status>
+<status status="PASS" starttime="20190705 13:33:20.852" endtime="20190705 13:33:20.895"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button</arg>
 </arguments>
-<msg timestamp="20190624 17:35:21.251" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button'.</msg>
-<status status="PASS" starttime="20190624 17:35:21.250" endtime="20190624 17:35:21.621"></status>
+<msg timestamp="20190705 13:33:20.896" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:20.895" endtime="20190705 13:33:21.245"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:21.207" endtime="20190624 17:35:21.622"></status>
+<status status="PASS" starttime="20190705 13:33:20.852" endtime="20190705 13:33:21.245"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:21.207" endtime="20190624 17:35:21.622"></status>
+<status status="PASS" starttime="20190705 13:33:20.851" endtime="20190705 13:33:21.246"></status>
 </kw>
 <kw name="Save flight log with valid input" library="MyCavokApp">
 <kw name="Select desired Aircraft" library="Logbook">
@@ -258,26 +258,26 @@
 <arguments>
 <arg>xpath=//*[@id="SelectAircraft"]</arg>
 </arguments>
-<msg timestamp="20190624 17:35:21.636" level="INFO">Clicking button 'xpath=//*[@id="SelectAircraft"]'.</msg>
-<status status="PASS" starttime="20190624 17:35:21.635" endtime="20190624 17:35:22.044"></status>
+<msg timestamp="20190705 13:33:21.280" level="INFO">Clicking button 'xpath=//*[@id="SelectAircraft"]'.</msg>
+<status status="PASS" starttime="20190705 13:33:21.280" endtime="20190705 13:33:21.686"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20190624 17:35:23.049" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20190624 17:35:22.044" endtime="20190624 17:35:23.049"></status>
+<msg timestamp="20190705 13:33:22.687" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20190705 13:33:21.687" endtime="20190705 13:33:22.687"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="regDropdown"]/div/ul/li[2]/a</arg>
 </arguments>
-<msg timestamp="20190624 17:35:23.049" level="INFO">Clicking element 'xpath=//*[@id="regDropdown"]/div/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20190624 17:35:23.049" endtime="20190624 17:35:23.223"></status>
+<msg timestamp="20190705 13:33:22.688" level="INFO">Clicking element 'xpath=//*[@id="regDropdown"]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20190705 13:33:22.687" endtime="20190705 13:33:22.877"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:21.634" endtime="20190624 17:35:23.223"></status>
+<status status="PASS" starttime="20190705 13:33:21.279" endtime="20190705 13:33:22.877"></status>
 </kw>
 <kw name="Save flight log" library="Logbook">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -285,46 +285,186 @@
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button</arg>
 </arguments>
-<status status="PASS" starttime="20190624 17:35:23.224" endtime="20190624 17:35:23.900"></status>
+<status status="PASS" starttime="20190705 13:33:22.878" endtime="20190705 13:33:23.369"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button</arg>
 </arguments>
-<msg timestamp="20190624 17:35:23.901" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button'.</msg>
-<status status="PASS" starttime="20190624 17:35:23.901" endtime="20190624 17:35:23.999"></status>
+<msg timestamp="20190705 13:33:23.369" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[1]/div[2]/div/div[2]/div[7]/div/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:23.369" endtime="20190705 13:33:23.474"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:23.223" endtime="20190624 17:35:23.999"></status>
+<status status="PASS" starttime="20190705 13:33:22.877" endtime="20190705 13:33:23.474"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:21.634" endtime="20190624 17:35:24.000"></status>
+<status status="PASS" starttime="20190705 13:33:21.279" endtime="20190705 13:33:23.474"></status>
+</kw>
+<kw name="View saved Logbook" library="MyCavokApp">
+<kw name="Scroll to saved Logbook" library="Logbook">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[1]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:23.476" endtime="20190705 13:33:23.522"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:23.475" endtime="20190705 13:33:23.523"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:23.475" endtime="20190705 13:33:23.523"></status>
+</kw>
+<kw name="Edit flight log" library="MyCavokApp">
+<kw name="Click edit button" library="Logbook">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:23.525" endtime="20190705 13:33:23.582"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190705 13:33:25.585" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190705 13:33:23.583" endtime="20190705 13:33:25.585"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button</arg>
+</arguments>
+<msg timestamp="20190705 13:33:25.587" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:25.586" endtime="20190705 13:33:25.776"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:23.524" endtime="20190705 13:33:25.776"></status>
+</kw>
+<kw name="Verify edit view loaded" library="Logbook">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[2]</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:25.776" endtime="20190705 13:33:25.794"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:25.776" endtime="20190705 13:33:25.794"></status>
+</kw>
+<kw name="Make Changes" library="Logbook">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[5]/td/div/div[1]/input</arg>
+<arg>${log_note}</arg>
+</arguments>
+<msg timestamp="20190705 13:33:25.794" level="INFO">Typing text 'random data' into text field 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[5]/td/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20190705 13:33:25.794" endtime="20190705 13:33:26.114"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:25.794" endtime="20190705 13:33:26.114"></status>
+</kw>
+<kw name="Save the changes" library="Logbook">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[1]</arg>
+</arguments>
+<msg timestamp="20190705 13:33:26.115" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[1]'.</msg>
+<status status="PASS" starttime="20190705 13:33:26.115" endtime="20190705 13:33:26.270"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:26.114" endtime="20190705 13:33:26.270"></status>
+</kw>
+<kw name="Verify changes" library="Logbook">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${log_note}</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:26.271" endtime="20190705 13:33:26.294"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:26.271" endtime="20190705 13:33:26.294"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:23.524" endtime="20190705 13:33:26.294"></status>
+</kw>
+<kw name="Delete a flight log" library="MyCavokApp">
+<kw name="Click edit button" library="Logbook">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:26.295" endtime="20190705 13:33:26.334"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190705 13:33:28.336" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190705 13:33:26.335" endtime="20190705 13:33:28.337"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button</arg>
+</arguments>
+<msg timestamp="20190705 13:33:28.339" level="INFO">Clicking button 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button'.</msg>
+<status status="PASS" starttime="20190705 13:33:28.338" endtime="20190705 13:33:28.581"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:26.295" endtime="20190705 13:33:28.581"></status>
+</kw>
+<kw name="Verify edit view loaded" library="Logbook">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[2]</arg>
+</arguments>
+<status status="PASS" starttime="20190705 13:33:28.584" endtime="20190705 13:33:28.600"></status>
+</kw>
+<status status="PASS" starttime="20190705 13:33:28.582" endtime="20190705 13:33:28.601"></status>
+</kw>
+<kw name="Delete the log" library="Logbook">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[3]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190705 13:33:34.161" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190705 13:33:33.757" endtime="20190705 13:33:34.161"></status>
+</kw>
+<msg timestamp="20190705 13:33:34.165" level="FAIL">Element 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[3]' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20190705 13:33:28.601" endtime="20190705 13:33:34.165"></status>
+</kw>
+<status status="FAIL" starttime="20190705 13:33:28.601" endtime="20190705 13:33:34.165"></status>
+</kw>
+<status status="FAIL" starttime="20190705 13:33:26.295" endtime="20190705 13:33:34.165"></status>
 </kw>
 <kw name="End Web Test" library="CommonWeb" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190624 17:35:24.001" endtime="20190624 17:35:26.271"></status>
+<status status="PASS" starttime="20190705 13:33:34.166" endtime="20190705 13:33:36.394"></status>
 </kw>
-<status status="PASS" starttime="20190624 17:35:24.001" endtime="20190624 17:35:26.272"></status>
+<status status="PASS" starttime="20190705 13:33:34.166" endtime="20190705 13:33:36.395"></status>
 </kw>
 <doc>This test verifies all the features in "Logbook" view after user's successful login</doc>
 <tags>
 <tag>logbook</tag>
 </tags>
-<status status="PASS" starttime="20190624 17:35:04.228" endtime="20190624 17:35:26.273" critical="yes"></status>
+<status status="FAIL" starttime="20190705 13:33:04.072" endtime="20190705 13:33:36.396" critical="yes">Element 'xpath=//*[@id="logbook-menu-pane-1"]/div[2]/div[2]/div/table/tr[4]/td[11]/button[3]' did not appear in 5 seconds.</status>
 </test>
 <doc>This test suite tests the functional features and workflow of the cavokapp web application</doc>
-<status status="PASS" starttime="20190624 17:35:03.951" endtime="20190624 17:35:26.278"></status>
+<status status="FAIL" starttime="20190705 13:33:03.835" endtime="20190705 13:33:36.403"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">logbook</stat>
+<stat pass="0" fail="1">logbook</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Cavok App">Cavok App</stat>
+<stat pass="0" fail="1" id="s1" name="Cavok App">Cavok App</stat>
 </suite>
 </statistics>
 <errors>

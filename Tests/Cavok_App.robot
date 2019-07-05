@@ -37,3 +37,6 @@ User's workflow in "Logbook" view
     MyCavokApp.Switch Logbook mode
     MyCavokApp.Save flight log with invalid input
     MyCavokApp.Save flight log with valid input
+    MyCavokApp.View saved Logbook
+    MyCavokApp.Edit flight log
+    MyCavokApp.Delete a flight log

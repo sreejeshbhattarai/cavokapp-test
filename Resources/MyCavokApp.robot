@@ -52,3 +52,18 @@ Save flight log with valid input
     Logbook.Select desired Aircraft
     Save flight log
 
+View saved Logbook
+    Logbook.Scroll to saved Logbook
+
+Edit flight log
+    Logbook.Click edit button
+    Logbook.Verify edit view loaded
+    Logbook.Make Changes
+    Logbook.Save the changes
+    Logbook.Verify changes
+
+Delete a flight log
+    Logbook.Click edit button
+    Logbook.Verify edit view loaded
+    Logbook.Delete the log
+
