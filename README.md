@@ -1,4 +1,4 @@
-Note: Visit Wiki page of this repository for detailed overview of the project.
+Note: Please visit Wiki page of this repository for detailed overview of the project.
 
 Installation Steps (Windows 10)
 
